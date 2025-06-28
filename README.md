@@ -50,6 +50,7 @@ numpy
 pickle5
 torch
 transformers
+scikit-learn
 ```
 
 
