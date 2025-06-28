@@ -166,20 +166,7 @@ from sklearn.metrics import confusion_matrix, classification_report
 def evaluate_multiclass_metrics(preds: torch.Tensor, 
                                 labels: torch.Tensor, 
                                 num_classes: int):
-    """
-    input
-    preds : 1D Tensor, shape [N], like [0,2,1,1,...]
-    labels: 1D Tensor, shape [N], like [0,1,1,2,...]
-    num_classes: int, total class number (3表示类0,1,2)
 
-    -------
-    results: dict:
-        - overall_accuracy: float, 
-        - accuracy_per_class: dict, class, {class idx: accuracy}
-        - confusion_matrix: ndarray,
-        - classification_report: dict, sklearn: precision, recall, f1-score
-        - f1_scores: dict, {class idx: f1_score}
-    """
     # class: [0, 1, 2, ..., num_classes-1]
     classes = list(range(num_classes))
     
