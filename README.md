@@ -1,8 +1,7 @@
 # 🧠 OG-MoE: [Oblique Genomics Mixture of Experts: Prediction of Brain Disorder With Aging-Related Changes of Brain’s Structural Connectivity Under Genomic Influences]
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
-[![Paper](https://img.shields.io/badge/arXiv-XXXX.XXXX-blue.svg)](https://arxiv.org/abs/XXXX.XXXX)
+[![Python](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/)
 
 ---
 
