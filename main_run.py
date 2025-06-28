@@ -47,48 +47,6 @@ def main(config):
     logger = Logger(log_dir=config.log_dir, log_txt=config.log_txt)
 
     # 5) Warm Start/start_from_checkpoint
-    # if config.start_from_checkpoint:
-    #     start_global_step = load_checkpoint(model, None, config.start_from_checkpoint, device=device)
-    #     print(f"Continue from step {start_global_step}")
-    # else:
-    #     print("=== Warm Start Phase ===")
-    #     warm_optimizer = AdamW(model.parameters(), lr=config.warm_start_lr)
-    #     model.train()
-    #     global_step = 0
-    #     while global_step < config.warm_start_steps:
-    #         for batch in train_loader:
-    #             global_step += 1
-    #             patch_tensors = batch["patch_tensors"].to(device)
-    #             # warm_start = True => 只计算MSE
-    #             outputs = model(
-    #                 patch_tensors,
-    #                 warm_start=True,
-    #                 mask_ratio=config.mask_ratio
-    #             )
-    #             loss = outputs.loss
-
-    #             warm_optimizer.zero_grad()
-    #             loss.backward()
-    #             warm_optimizer.step()
-
-    #             if global_step % 50 == 0:
-    #                 logger.log(global_step, {"warm_loss": loss.item()})
-
-    #             if global_step % config.save_steps == 0:
-    #                 ckpt_path = os.path.join(config.output_dir, f"warm_ckpt_step_{global_step}.pt")
-    #                 save_checkpoint(model, warm_optimizer, global_step, ckpt_path)
-
-    #             if global_step >= config.warm_start_steps:
-    #                 break
-
-        # # save warm checkpoint
-        # warm_ckpt = os.path.join(config.output_dir, f"warm_final.pt")
-        # save_checkpoint(model, warm_optimizer, global_step, warm_ckpt)
-        # print(f"Warm Start done. Saved warm checkpoint: {warm_ckpt}")
-
-        # # warm checkpoint 
-        # load_checkpoint(model, None, warm_ckpt, device=device)
-        # start_global_step = 0
 
     # 6) Traing (CLS + MSE)
     print("=== Main Training Phase ===")
