@@ -1,0 +1,53 @@
+{
+  "hidden_size": 128,
+  "num_attention_heads": 4,
+
+  "num_moe_layers": 4,
+  "num_mlp_layers": 2,
+
+  "moe_intermediate_size": 16,
+  "intermediate_size": 256,
+
+  "cons_alpha": 0.05,
+
+  "num_experts_per_tok": 4,
+  "n_routed_experts": 24,
+  "aux_loss_alpha": 0.1,
+
+  "seq_aux": false,
+  "scoring_func": "softmax",
+  "norm_topk_prob": true,
+  "n_shared_experts": 1,
+
+  "gene_size": 104,
+  "GE_temprature": 0.7,
+
+  "max_patches": 156,
+  "patch_dim": 360,
+  "num_labels0": 3,
+  "num_labels1": 2,
+
+  "mask_ratio": 0.25,
+  "dropout": 0.1,
+
+  "warm_start_steps": 20,
+  "warm_start_lr": 1e-4,
+  "rec_percent":3.4,
+
+  "train_lr": 1e-4,
+  "batch_size": 200,
+  "epochs": 800,
+  "stepsize": 300,
+  "gamma":0.1,
+
+  "save_steps": 50,
+  "output_dir": "./experiments/run0/checkpoints",
+  "start_from_checkpoint": "",
+  "seed": 9983672,
+
+  "log_dir": "./experiments/run0/logs",
+  "log_txt": "logs.txt",
+  "saves": "./experiments/run0/my_model_path",
+
+  "device": "cuda:1"
+}
