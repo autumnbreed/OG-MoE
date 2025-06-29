@@ -54,7 +54,7 @@ scikit-learn
 ```
 
 
-### 2. Clone the repository
+### 2. Clone the repository and run
 
 ```bash
 git clone https://github.com/autumnbreed/OG-MoE/
