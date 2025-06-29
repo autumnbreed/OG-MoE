@@ -35,7 +35,7 @@ Notice:
 
 ## 🖼️ Main Figures
 
-### Figure 1: [Figure Title/Description]
+### Figure 1: [Model overview]
 ![Figure1](./assets/figure1.png)
 
 ---
