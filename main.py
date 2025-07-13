@@ -59,7 +59,7 @@ def main(config):
     #         for batch in train_loader:
     #             global_step += 1
     #             patch_tensors = batch["patch_tensors"].to(device)
-    #             # warm_start = True => 只计算MSE
+    #             # warm_start = True
     #             outputs = model(
     #                 patch_tensors,
     #                 warm_start=True,
