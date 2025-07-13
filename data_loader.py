@@ -100,7 +100,7 @@ def create_dataloader(data_list, batch_size, shuffle=True):
                       collate_fn=collate_fn)
 
 if __name__ == "__main__":
-    training_data = load_adni_img_gene_data_('/home/yan/Craftable/work2025/MICCAI_gene/Data/train')
+    training_data = load_adni_img_gene_data_('../Data/train')
     train_loader = create_dataloader(training_data, 1000)
 
     batch_ = next(iter(train_loader))
@@ -117,7 +117,7 @@ if __name__ == "__main__":
     # print(batch_["label0"])
     # print(batch_["genes"])
     
-    test_data = load_adni_img_gene_data_('/home/yan/Craftable/work2025/MICCAI_gene/Data/test')
+    test_data = load_adni_img_gene_data_('../Data/test')
     test_loader = create_dataloader(test_data, 1000)
     
     batch_ = next(iter(test_loader))
